@@ -4,6 +4,7 @@ emoji: "🐳"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["airflow", "localstack", "ecs", "aws", "docker"]
 published: false
+publication_name: "yaoko_tech_blog"
 ---
 
 # はじめに

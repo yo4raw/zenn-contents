@@ -1,7 +1,7 @@
 ---
 title: "人間性を捧げる生成AI時代の技術選定"
 emoji: "🤖"
-type: "idea"
+type: "tech"
 topics: ["ai", "生成ai", "技術選定", "開発効率化", "llm"]
 published: false
 publication_name: "yaoko_tech_blog"

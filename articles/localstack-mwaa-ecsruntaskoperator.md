@@ -9,7 +9,7 @@ publication_name: "yaoko_tech_blog"
 
 # はじめに
 
-中野製菓のかりんとうが大好きです。
+[中野製菓](http://www.nakanoseika.co.jp/)のかりんとうが大好きです。
 
 AirflowのEcsRunTaskOperatorをLocalStackでテストしようとした際に、`KeyError: 'failures'`エラーが発生することがあります。この記事では、その原因と解決方法について詳しく解説します。
 

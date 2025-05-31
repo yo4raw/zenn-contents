@@ -4,12 +4,14 @@ emoji: "🤖"
 type: "idea"
 topics: ["ai", "生成ai", "技術選定", "開発効率化", "llm"]
 published: false
-publication_name: "yaosko_tech_blog"
+publication_name: "yaoko_tech_blog"
 ---
 
 ## はじめに
 
 先日、技術選定を突き詰めるOnline Conference 2025の懇親会LTで「人間性を捧げる生成AI時代の技術選定」というタイトルで発表させていただきました。5分という短い時間でしたが、生成AI時代における技術選定のポイントについてお話しした内容を、この記事では詳しく展開してお伝えします。
+
+
 
 ## 会社紹介
 

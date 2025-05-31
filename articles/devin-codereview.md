@@ -162,7 +162,8 @@ jobs:
                 additional=""
                 prompt="$base_prompt $instructions $additional"
                 create_session "$prompt"
-              else                exit 0
+              else
+                exit 0
               fi
             fi
 ```
@@ -278,6 +279,7 @@ fi
 - **一貫性**: 同じ基準でのレビューを保証
 - **学習効果**: チーム全体のコード品質向上
 - **負荷軽減**: 人的リソースの有効活用
+ 
 
 ### ⚠️ 注意点
 - **コスト**: Devin APIの利用料金
@@ -299,4 +301,4 @@ Devinを活用したラベルドリブンなコードレビューシステムに
 - [Devin API Documentation](https://api.devin.ai/docs)
 - [GitHub Actions Documentation](https://docs.github.com/en/actions)
 - [GitHub CLI Reference](https://cli.github.com/manual/)
-```
+- [Devinにコードレビューをさせ、コード品質と開発速度を同時に高める話](https://zenn.dev/globis/articles/28e47f8107c5b5)

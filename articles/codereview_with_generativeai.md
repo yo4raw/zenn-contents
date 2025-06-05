@@ -4,7 +4,6 @@ emoji: "🤖"
 type: "idea"
 topics: []
 published: false
-publication_name: "kari"
 ---
 
 ## はじめに

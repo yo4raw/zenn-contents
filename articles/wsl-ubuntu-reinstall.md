@@ -25,15 +25,13 @@ wsl --install -d Ubuntu
 ```bash
 sudo apt update -y
 sudo apt upgrade -y
-# 最新のNode.jsならこっち
+
+# 最新のNode.js特有のコマンド
 sudo apt install curl -y
 sudo curl -sL https://deb.nodesource.com/setup | sudo bash -
 sudo apt install npm -y
 
-#そうでなくてよいならこっち
-sudo apt install nodejs npm -y
-
-# ClaudoCodeのインストール
+# ClaudeCodeのインストール
 npm install -g @anthropic-ai/claude-code
 ```
 

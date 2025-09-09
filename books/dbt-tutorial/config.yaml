@@ -1,0 +1,9 @@
+title: "手を動かして学ぶ dbt + DuckDB" # 本のタイトル
+summary: "dbt と DuckDB を使ったデータ変換の基礎を学ぶハンズオンチュートリアル" # 本の概要
+topics: ["dbt", "DuckDB", "Docker"] # トピック（5つまで）
+published: false # 
+price: 0 # 有料の場合200〜5000
+chapters:
+  - chapter1 # Docker環境の構築
+  - Docker環境の構築 # チャプター2
+  - dbtの初期化 # チャプター3

@@ -86,3 +86,10 @@ erDiagram
   ブルの構造
 
   この構造をまずは把握していただいたうえで早速チュートリアルに入っていきましょう！
+
+下記のコマンド
+
+```bash
+docker compose up -d
+docker compose exec dbt-tutorial ssh
+```

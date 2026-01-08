@@ -6,17 +6,18 @@ title: "はじめに"
 ## はじめに
 
 このチュートリアルはすべてDocker環境で行うためローカル環境を汚染しません。
-最初のベースとなるファイルのみレポジトリに配置されているので、それらをどんどんと変換していくのがこのチュートリアルの基本的な流れとなっています。
+最初のベースとなるファイルのみレポジトリに配置されているので、それらをどんどんとdbtを操作していくのがこのチュートリアルの基本的な流れとなっています。
 
 また、dbtに用いるOLAPDBとしてDuckDBを使用しています。
 今回はDuckDBの中身まで言及はしませんが、SQLiteのOLAPDB版とざっくり捉えていただいて構いません。
 SQLiteのようにサーバを立ち上げなくてもファイルベースで管理できるとても優れたDBです。
-wasmで実装されたWebGUIがあるなど、とてもイケているDBなので興味があったら深ぼっていただいても良いかもしれません。私もSnowflakeとDuckDBのハイブリット構成でコスト最適化ができないか日々考えています。
+wasmで実装されたWebGUIがあるなど、とてもイケているDBなので興味があったら深ぼっていただいても良いかもしれません。私はSnowflakeとDuckDBのハイブリット構成でコスト最適化ができないか日々考えています。
 
-まずは下記のレポジトリよりDockerおよびSeedファイルをCloneしてきましょう。
+まずは下記のレポジトリよりDockerfileおよびSeedファイルをCloneしてきましょう。
 
 ```bash
 git clone https://github.com/yo4raw/dbt-tutorial
+cd dbt-tutorial
 ```
 
 Dockerfileとcompose.ymlはよくありがちな構成なので特に解説はしませんが、ご確認いただきたいのはseedsの中にある4ファイルです。
@@ -54,7 +55,7 @@ erDiagram
     }
 
     SALES_TRANSACTIONS {
-        string transaction_id
+        int transaction_id
         int customer_id FK
         int product_id FK
         int quantity
@@ -70,24 +71,9 @@ erDiagram
     PRODUCTS ||--o{ SALES_TRANSACTIONS : "sold_in"
 ```
 
+この構造をまずは把握していただいたうえで早速チュートリアルに入っていきましょう！
 
-  関連性の説明:
-  - CUSTOMERS と
-  SALES_TRANSACTIONS:
-  1対多の関係（1人の顧客が複
-  数回購入可能）
-  - PRODUCTS と
-  SALES_TRANSACTIONS:
-  1対多の関係（1つの商品が複
-  数回販売可能）
-  - SALES_TRANSACTIONSがファ
-  クトテーブル、CUSTOMERSとPR
-  ODUCTSがディメンションテー
-  ブルの構造
-
-  この構造をまずは把握していただいたうえで早速チュートリアルに入っていきましょう！
-
-下記のコマンド
+下記のコマンドでDockerを立ち上げてsshでDockerの中に入りましょう。
 
 ```bash
 docker compose up -d
